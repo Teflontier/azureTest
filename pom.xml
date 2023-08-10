@@ -9,11 +9,12 @@
 	<version>1.0.0</version>
 	<name>${project.groupId}.${project.artifactId}</name>
 	<description>A small webservice to test azure</description>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<properties>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<maven.compiler.source>1.8</maven.compiler.source>
+		<webapp.name>schellner-azuretest</webapp.name>
 	</properties>
 
 	<dependencies>
@@ -34,6 +35,13 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+				<artifactId>maven-war-plugin</artifactId>
+				<configuration>
+					<failOnMissingWebXml>false</failOnMissingWebXml>
+				</configuration>
+			</plugin>
+
 		</plugins>
 	</build>
 
