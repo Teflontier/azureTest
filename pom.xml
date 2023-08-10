@@ -14,7 +14,6 @@
 	<properties>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<maven.compiler.source>1.8</maven.compiler.source>
-		<webapp.name>schellner-azuretest</webapp.name>
 	</properties>
 
 	<dependencies>
@@ -29,7 +28,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>${webapp.name}##${project.version}</finalName>
+		<finalName>schellner-azuretest##${project.version}</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
