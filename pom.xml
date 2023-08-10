@@ -9,7 +9,7 @@
 	<version>1.0.0</version>
 	<name>${project.groupId}.${project.artifactId}</name>
 	<description>A small webservice to test azure</description>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 
 	<properties>
 		<maven.compiler.target>1.8</maven.compiler.target>
@@ -34,15 +34,6 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-			<plugin>
-				<artifactId>maven-war-plugin</artifactId>
-				<configuration>
-					<attachClasses>true</attachClasses>
-					<classesClassifier>classes</classesClassifier>
-					<failOnMissingWebXml>false</failOnMissingWebXml>
-				</configuration>
-			</plugin>
-
 		</plugins>
 	</build>
 
