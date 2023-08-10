@@ -49,5 +49,5 @@ jobs:
         with:
           app-name: 'SchellnerTestWebapp'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_96339F449B9C494A80A433323D7ACC99 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E732BE95C3D1427BA4C44178B4312D91 }}
           package: '*.war'
