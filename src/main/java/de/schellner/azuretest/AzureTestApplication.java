@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class AzureTestApplication {
 
-	@GetMapping("/helloWorld")
+	@GetMapping("/hw")
 	public String helloWorld() {
 		return "Hello world";
 	}
